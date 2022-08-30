@@ -1,0 +1,30 @@
+.dashboard {
+    flex: 6;
+    padding-left: 4rem;
+    background-color: var(--color-background);
+
+
+
+
+    &__heading {
+        color: var(--color-text);
+        margin-top: 2rem;
+    }
+
+    &__tasks {
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8rem;
+        margin-top: 10rem;
+        align-items: center;
+    }
+
+    &__loading {
+        flex: 6;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        background-color: var(--color-background)
+    }
+}

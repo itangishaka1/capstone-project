@@ -1,0 +1,42 @@
+.staff {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+    display: flex;
+    justify-content: center;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__dataDrid {
+        font-size: 1.8rem !important;
+        height: 50rem;
+        // flex: 1;
+    }
+
+    &__btn--edit {
+        border: none;
+        border-radius: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #3bb077;
+        color: white;
+        cursor: pointer;
+        margin-right: 2rem;
+    }
+
+    &__icon--delete {
+        color: red;
+        cursor: pointer;
+        font-size: 3rem !important;
+    }
+    
+
+}

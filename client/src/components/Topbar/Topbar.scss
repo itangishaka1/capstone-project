@@ -1,0 +1,49 @@
+@mixin tablet {
+    @media (min-width: 768px){
+        @content;
+    }
+  }
+
+@mixin desktop {
+    @media (min-width: 1024px){
+        @content;
+    }
+  }
+
+  @mixin mobile {
+    @media (max-width: 320px){
+        @content;
+    }
+  }  
+
+
+.topbar {
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-text);
+    
+    @include mobile {
+        justify-content: center;
+    }
+
+    @include tablet {
+        justify-content: start;
+        padding-left: 2rem;
+    }
+
+    @include desktop{
+        padding-left: 13rem;
+    }
+    
+    &__logo {
+        color: orange;
+        font-size: 1.8rem;
+        font-weight: bold;
+
+
+
+    }
+
+}

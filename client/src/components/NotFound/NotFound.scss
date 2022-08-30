@@ -1,0 +1,31 @@
+
+@mixin desktop {
+    @media (min-width: 1024px){
+        @content;
+    }
+  }
+.not-found {
+
+    &__topbar {
+        display: flex;
+        justify-content: center;
+
+        @include desktop {
+            justify-content: start;
+        }
+    }
+
+    &__main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-background);
+        height: 80vh;
+        font-weight: bold;
+        font-size: 1.6rem;
+        
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  // padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text:rgb(52, 43, 43);
+  --color-primary: orange;
+  --color-white:#fff;
+  --color-background: #8AC7DB;
+
+  --transition-primary: ease 1s;
+  
+}
+
+
+
+html {
+  font-size: 62.5%;
+  overflow-y: hidden;
+}
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    overflow-x: hidden;
+  }
+
+  li {
+    list-style: none;
+  }
+  .link {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-primary);
+    cursor: pointer;
+  }
+
+  // @mixin tablet {
+  //   @media (min-width: 768px){
+  //       @content;
+  //   }
+  // }
+

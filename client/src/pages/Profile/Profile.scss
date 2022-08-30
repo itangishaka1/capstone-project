@@ -1,0 +1,117 @@
+.profile {
+    flex: 6;
+    padding-left: 1rem;
+    padding-top: 3rem;
+    background-color: var(--color-background);
+
+    display: flex;
+    flex-direction: column;
+
+    &__cards {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10rem;
+    }
+
+    &__students {
+        background-color: rgb(94, 94, 7);
+    }
+    &__staffs {
+        background-color: rgb(61, 105, 237);
+    }
+    &__departments {
+        background-color: rgb(34, 148, 18);
+    }
+    &__courses {
+        background-color: rgb(182, 10, 145);
+    }
+
+    &__admin {
+        background-color: #fff;
+        display: flex;
+        padding-bottom: 2rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        border-radius: 1rem;
+        -webkit-box-shadow: 0px 0px 11px -3px #000000;
+        box-shadow: 0px 0px 11px -3px #000000;
+    }
+
+    &__admin-left {
+        flex: 1;
+    }
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        
+    }
+
+    &__name-contact {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    &__email , &__phone{
+        font-weight: bold;
+        padding-right: 1rem;
+    }
+
+
+    &__name-name {
+        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+    }
+
+    &__name-item {
+        font-size: 2.4rem;
+        color: var(--color-text);
+    }
+
+    &__title {
+        color: var(--color-primary);
+        font-weight: bold;
+        padding-top: 1rem;
+    }
+
+    &__admin-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__adminPhoto-container {
+        width: 30rem;
+        height: 30rem;
+        padding: 5rem;
+        
+    }
+    &__adminPhoto {
+        border-radius: 2rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    &__upload {
+        position: relative;
+    }
+
+    &__upload-icon{
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+    }
+}

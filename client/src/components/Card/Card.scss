@@ -1,0 +1,53 @@
+.card {
+    width: 20rem;
+    border-radius: .5rem;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 11px -3px #000000;
+    box-shadow: 0px 0px 11px -3px #000000;
+
+    &__icon-container {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.222);
+        padding: 1rem;
+        padding-bottom: 4rem;
+        
+    }
+
+    &__icon {
+        font-size: 4rem !important;
+        color: var(--color-white);
+    }
+        
+        &__desc {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 1rem;
+            bottom: 5rem;
+            font-size: 1.2rem;
+            color: var(--color-white);
+        }
+
+        &__number {
+            align-self: flex-end;
+            
+        }
+
+        &__view-details {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            padding-left: 2rem;
+            font-size: 1.2rem;
+            color: var(--color-white);
+            transition: var(--transition-primary);
+
+            &:hover {
+                background-color: var(--color-primary);
+            }
+            
+        }
+
+        &__arrow {
+            font-size: 2rem !important;
+        }
+}

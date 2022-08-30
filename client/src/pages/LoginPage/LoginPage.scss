@@ -1,0 +1,102 @@
+@mixin tablet {
+    @media (min-width: 768px){
+        @content;
+    }
+  }
+
+@mixin desktop {
+    @media (min-width: 1024px){
+        @content;
+    }
+  }
+
+.login-page {
+    background-color: var(--color-background);
+
+    &__topbar {
+        padding-left: 2rem;
+        
+        @include desktop {
+            padding-left: 5rem;
+
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+
+        &>span {
+            border-bottom: 4px solid orange;
+            margin-left: 1rem;
+        }
+    }
+
+  &__form {
+    background-color: var(--color-white);
+    margin-top: 5rem;
+    width: 100%;
+    padding-bottom: 3rem;
+    margin-bottom: 10rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        width: 50%;
+    }
+
+    @include desktop {
+        width: 30%;
+        margin-bottom: 15.5rem;
+    }
+  }
+
+  &__subTitle-container {
+     display: flex;
+     justify-content: center;
+     padding: 2rem;
+  }
+
+  &__icon {
+     font-size: 3rem !important;
+     margin-right: .5rem;
+
+  }
+
+
+
+    &__btn {
+        width: 90% ;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    &__register {
+        padding-left: 2rem;
+    }
+
+    &__go-register {
+        color: purple;
+        font-weight: bold;
+    }
+
+    &__error , &__success {
+        text-align: center;
+        padding-top: 1rem;
+    }
+    
+    &__error {
+        color: red;
+    }
+    &__success {
+        color: green;
+    }
+}

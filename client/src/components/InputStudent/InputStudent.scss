@@ -1,0 +1,26 @@
+.inputStudent {
+   display: flex;
+   flex-direction: column;
+
+   &__label {
+    font-size: 1.4rem;
+    color: gray;
+}
+
+&__input {
+    width: 40rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    border-color: gray;
+    font-size: inherit;
+    margin-bottom: 2rem;
+
+
+    &:focus {
+        background-color: rgb(241, 202, 129);
+        color: blue;
+    }
+}
+
+}

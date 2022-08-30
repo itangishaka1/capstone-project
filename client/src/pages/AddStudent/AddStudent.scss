@@ -1,0 +1,67 @@
+.add-student {
+    flex: 6;
+    background-color: var(--color-background);
+    padding: 2rem;
+    padding-bottom: 0;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+
+    &__form {
+        background-color: #FFF;
+        display: flex;
+        width: 90rem;
+        margin: 0 auto;
+    }
+
+    &__form-left {
+        flex: 1;
+        margin-right: 2rem;
+        padding: 2rem;
+    }
+
+    &__form-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 2rem;
+    }
+
+    &__image {
+        width: 30rem;
+        height: 30rem;
+        object-fit: cover;
+        border-radius: 2rem;
+        margin-top: 3rem;
+    }
+
+    &__btn-submit {
+        margin-top: 1rem;
+        margin-left: 7rem;
+    }
+    &__btn {
+        margin-top: 5rem;
+        padding-right: 5rem;
+        position: relative;
+    }
+
+    &__icon {
+        font-size: 2rem !important;
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+    }
+
+    &__error {
+        color: red;
+        font-size: 1.8rem;
+    }
+    &__success {
+        color: green;
+        font-size: 1.8rem;
+    }
+}

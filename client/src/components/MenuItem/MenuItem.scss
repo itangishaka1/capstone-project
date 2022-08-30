@@ -1,0 +1,17 @@
+.menuItem {
+    display: flex;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #555;
+
+    &:hover{
+        color: orange;
+    }
+
+
+    &__icon {
+        font-size: 2.5rem !important;
+        margin-right: 2rem;
+    }
+}

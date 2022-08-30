@@ -1,0 +1,98 @@
+.add-staff {
+    flex: 6;
+    background-color: var(--color-background);
+    padding: 2rem;
+
+    &__title {
+        width: fit-content;
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+        border-bottom: 4px solid  rgb(182, 10, 145);
+        margin-bottom: 4rem;
+    }
+
+    &__form {
+        background-color: white;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+        width: 80rem;
+        margin: 0 auto;
+        -webkit-box-shadow: 0px 0px 11px -3px #000000;
+        box-shadow: 0px 0px 11px -3px #000000;
+    }
+
+    &__label {
+        display: inline-block;
+        font-size: 1.4rem;
+        color: gray;
+        padding-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    &__info-heading {
+        margin-top: 4rem;
+    }
+
+    &__select {
+        display: block;
+        margin-left: 2rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: gray;
+
+        &:focus {
+            background-color: rgb(241, 202, 129);
+            color: blue;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+
+    }
+
+    &__info {
+        flex: 1;
+    }
+
+&__info-heading {
+    padding-left: 2rem;
+    color: var(--color-text);
+}
+
+    &__address {
+        flex: 1;
+
+    }
+
+    // &__button {
+    //     margin-top: 3rem;
+    //     width: 20rem;
+    //     align-self: center;
+    //     padding: 1rem;
+    //     border-radius: 1rem;
+    //     border: transparent;
+    //     margin-bottom: 2rem;
+    //     background-color: var(--color-primary);
+    //     font-weight: bold;
+    //     font-size: 2rem;
+    //     -webkit-box-shadow: 0px 0px 11px -3px #000000;
+    //     box-shadow: 0px 0px 11px -3px #000000;
+    //     cursor: pointer;
+    // }
+
+    &__error, &__success {
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 3rem;
+        font-size: 2rem;
+        color: red;
+    }
+
+    &__success {
+        color: green;
+    }
+}
